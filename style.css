@@ -11,6 +11,11 @@
             z-index: 11;
             background-color: aquamarine;
         }
+        .logo{
+          border: 2px red solid;
+          width: 140px;
+          height: 60px;
+        }
         .logo p{
          position: absolute;
          left: 60px;
@@ -150,6 +155,7 @@
               justify-content: space-evenly;
               align-items: center;
               margin-bottom: 100px;
+              flex-wrap: wrap;
          }
          .flowers .box{
             width: 280px;
@@ -198,6 +204,7 @@
             height: 700px;
             /* border: 2px red solid; */
             display: flex;
+            flex-wrap: wrap;
         }
         #mens h4{
           display: flex;
@@ -548,7 +555,7 @@
   margin-top: 100px;
   width: 100%;
   height: 80vh;
-  border: 2px solid rgb(43, 175, 50);
+  /* border: 2px solid rgb(43, 175, 50); */
   background-color:rgb(121, 208, 242);
    display: flex;
   justify-content: center;
@@ -617,10 +624,7 @@ to{right:25%;}
   transition: 1s;
   box-shadow: 2px 2px 20px red;
     border: 2px solid red;
-
-
 }
-
 .review{
   width: 100%;
   height: 150px;
@@ -649,10 +653,7 @@ to{right:25%;}
 .rev img{
   width: 30px;
   height: 40px;
-  
    align-items: center;
- 
-
 }
 #footer{
   width: 100%;
@@ -666,7 +667,6 @@ to{right:25%;}
   background-color: rgb(3, 17, 12);
      display: flex;
   justify-content: space-around;
-
 }.footer1 {
    margin-top: 60px;
 }
@@ -688,10 +688,310 @@ to{right:25%;}
   margin-top: -40px;
   /* left: 100px; */
   right: 140px;
-
-
 }
 
+
+@media screen and (max-width:376px)
+
+
+{
+  .hero{
+    margin-top: 100px;
+  }
+  #mens{
+    margin-top: 1730px;
+    border: 2px blue solid;
+  }
+  .navbar{
+    width: 100%;
+  }
+  #footer{
+    width: 100%;
+    border: 2px red solid;
+  }
+  .foot{
+    width: 100%;
+  }
+  .flowers{
+    width: 100%;
+    border: 2px red solid;
+    height: auto;
+    margin-top: 1730px;
+  }
+  .box{
+    margin: 10px;
+  }
+  .mens{
+    height: auto;
+    border: 2px red solid;
+  }
+  .mens1 img{
+    width: 20%;
+    height: 10vh;
+  }
+  section{
+    margin: 10px;
+  }
+  #dq{
+   
+       width: 172%;
+        height: 37vh;
+  }
+
+  #in{
+    width: 100%;
+    height: 26vh;
+  }
+  .mensw{
+    border: 2px rebeccapurple solid;
+    width: 100%;
+    height: 280rem;
+    margin-top: 50px;
+    /* display: block; */
+    flex-wrap: wrap;
+
+  }
+
+  .i1 img{
+    width: 95%;
+    height: 30rem;
+    gap: 2px;
+    column-gap: 0;
+  }
+  .women{
+    border: 2px red solid;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .wom2{
+    display: flex;
+    flex-direction: column;
+  }
+  .wom img{
+               width: 46%;
+        height: 43vh;
+  }
+
+  #womens{
+    border: 2px black solid;
+    height: 200vh;
+  }
+  #womens h5,h4{
+    display: none;
+  }
+  .wphotos{
+    border: 2px red solid;
+    margin-top: 100px;
+    height: 110vh;
+     display: block;
+  }
+  .wphotos .p{
+    width: 350px;
+    height: 510px;
+    border: 2px rebeccapurple solid;
+  }
+  .p img{
+    width: 250px;
+    height: 200px;
+  }
+ #electronics{
+  margin-top: 115rem;
+ }
+ .mobiles{
+  flex-wrap: wrap;
+  width: 200px;
+  height: auto;
+ }
+ .phones1 img{
+  width: 350px;
+  height: auto;
+  flex-wrap: wrap;
+ }
+ .phones1 > p{
+  /* flex-direction: column; */
+  /* margin-top: 200px; */
+  /* font-size: 20px;
+  display: flex; */
+  font-size: 0px;
+ }
+ .mobiles2{
+  display: block;
+ }
+ .phones3{
+  width: 400px;
+  height: 400px;
+ }
+ .phones3 img{
+  width: 390px;
+  height: 290px;
+  display: block;
+ }
+ .newmobiles{
+  width: 100%;
+  height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border: 2px rebeccapurple solid;
+  margin-top: 95rem;
+    display: block;
+ }
+ .nn1{
+   width: 200px;
+  height: 10px;
+
+  /* flex-wrap: wrap; */
+ }
+ .nn1 img{
+  width: 350px;
+  height: 330px;
+ }
+ .gift{
+display: block;
+width: 100%;
+height: auto;
+ }
+ .gift1{
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+    border: 2px solid red;
+ 
+ }
+ .gift1 p{
+      width: 100%;
+ }
+ .gift2{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+ }
+ .gift2 img{
+  width: 370px;
+  height: auto;
+  background-color: white;
+ }
+ .gift4{
+  height: 310px;
+ }
+ .review{
+  margin-top: 135rem;
+  flex-wrap: wrap;
+ }
+ .rev{
+  /* width: 155px; */
+  height: 140px;
+ }
+ #footer{
+  width: 100%;
+  height: 200px;
+  margin-top: 550px;
+
+ }
+.foot{
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+.last{
+  width: 100%;
+  margin-top: 10px;
+ 
+}
+
+  /* .top{
+    border: 2px blue solid;
+      margin-top: 10px;
+            height: 20vh;
+            position: fixed;
+            top: 0;
+            width: 25%;
+            z-index: 11;
+            background-color: aquamarine;
+           
+  }
+  .logo img{
+    margin-left: -150px;
+    height: 30px;
+    width: 3px;
+    display: flex;
+    justify-content: left;
+    align-items: start; 
+  }
+
+.search_bar.input{
+  width: 10px;
+  height: 10px;
+  margin: auto;
+} */
+
+
+.top{
+  margin-top: 10px;
+  width: 25%;
+  height: 200px;
+  /* display: flex; */
+}
+.logo{
+  margin-top: 100px;
+}
+.logo img{
+  border: 2px solid rgb(0, 0, 0);
+/* margin-left: 80px; */
+/* margin-top: 100px; */
+height: 40px;
+width: 30px;
+}
+.input input{
+  width: 300px;
+  /* width: auto; */
+  /* margin-left: 100px; */
+  /* border: 2px solid rgba(0, 0, 0, 0.341); */
+  margin-top: 10px;
+  margin-right: 50px;
+  
+}
+.search_bar .select{
+  width: 50px;
+  /* margin-right: -10px; */
+  margin-left: 40px;
+  margin-top: 10px
+
+  
+}
+.cart{
+  width: 50px;
+  height: 30px;
+  margin-top: -30px;
+  position: absolute;
+  /* border: 2px solid red; */
+}
+.cart img{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  /* margin-bottom: 20px; */
+}
+.names{
+
+  width: 90px;
+  height: 100px;
+  border: 2px solid red;
+}
+.names a{
+  width: 10px;
+  font-size: 8px;
+  margin-left: 2px;
+   /* border: 2px solid blue; */
+}
+.carousel-item{
+  margin-top: 110px;
+}
+}
   
 
 
