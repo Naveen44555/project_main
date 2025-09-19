@@ -14,7 +14,7 @@
         .logo{
           border: 2px red solid;
           width: 140px;
-          height: 60px;
+          height: 45px;
         }
         .logo p{
          position: absolute;
@@ -247,7 +247,6 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: white;
             /* text-align: center; */
-
          }
          .mens1 button:hover{
             background-color:rgb(76, 157, 157);
@@ -257,7 +256,6 @@
       .main{
         overflow: hidden;
         width: 100%;
-
       } 
          .mensw{
             width: 100%;
@@ -269,7 +267,6 @@
             gap: 30px;
          /* justify-content: space-evenly; */
       animation: mee 6s linear infinite;
-  
          }
          .mensw .i1{
             width: 41vh;
@@ -278,7 +275,6 @@
        align-items: center;
           flex-direction: column;
            /* background-color: aqua; */
-
          }
        .i1 img{
          display: flex;
@@ -290,11 +286,9 @@
        .i1 p{
         color: red;
        }
-     
        .i1 button:hover{
         box-shadow: 2px 2px 30px cornflowerblue;
-        color: red;
-        
+        color: red;     
        }
         .i1:hover{
           transform: scale(1.1);
@@ -399,7 +393,6 @@
       width: 100%;
       display: flex;
       justify-content: space-evenly;
-
     }
     .wphotos .p{
       width: 90px;
@@ -416,9 +409,7 @@
       height: 370px;
       /* border: 2px blue solid; */
       border-radius: 40px;
-  
     }
-
     .wphotos p{
       font-size: larger;
       color: blue;
@@ -444,7 +435,6 @@
       height: 600px;  
        /* border: 2px green solid;  */
      }
-
      .phones1 p{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px; 
@@ -501,7 +491,6 @@
        /* border: 2px blueviolet solid; */
      }
      .mobiles2 .phones3{
-
      @keyframes mob{ 
      0% {
         transform: translateX(0);
@@ -689,18 +678,71 @@ to{right:25%;}
   /* left: 100px; */
   right: 140px;
 }
-
-
 @media screen and (max-width:376px)
-
-
-{
+{ 
+.top{
+  /* margin-top: 10px; */
+  width: 47%;
+  height: 125px;
+  /* display: flex; */
+}
+.logo{
+  margin-top: 100px;
+}
+.logo img{
+  border: 2px solid rgb(0, 0, 0);
+/* margin-left: 80px; */
+/* margin-top: 100px; */
+height: 40px;
+width: 45px;
+    margin-top: -9px;
+    margin-left: -103px;
+    border-radius: 50px;
+}
+.input input{
+  width: 300px;
+  /* width: auto; */
+  /* margin-left: 100px; */
+  /* border: 2px solid rgba(0, 0, 0, 0.341); */
+  margin-top: -3px;
+  margin-right: 43px;
+}
+.search_bar .select{
+  width: 50px;
+  /* margin-right: -10px; */
+  margin-left: 40px;
+    margin-top: -4px;
+}
+.cart{
+         width: 50px;
+        height: 30px;
+        margin-top: -50px;
+        position: absolute;     
+        margin-right: -108px;
+}
+.cart img{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  /* margin-bottom: 20px; */
+}
+.names{
+  width: 90px;
+  height: 100px;
+  /* border: 2px solid red; */
+}
+.names a{
+  width: 10px;
+  font-size: 8px;
+  margin-left: 2px;
+   /* border: 2px solid blue; */
+}
+.carousel-item{
+  margin-top: 26px;
+}
+}
   .hero{
     margin-top: 100px;
-  }
-  #mens{
-    margin-top: 1730px;
-    border: 2px blue solid;
   }
   .navbar{
     width: 100%;
@@ -716,31 +758,38 @@ to{right:25%;}
     width: 100%;
     border: 2px red solid;
     height: auto;
-    margin-top: 1730px;
+    margin-top: 1650px;
   }
   .box{
     margin: 10px;
   }
+  #mens{
+    margin-top: 1530px;
+    border: 2px blue solid;
+  }
   .mens{
+    margin-top: 20px;
     height: auto;
     border: 2px red solid;
   }
   .mens1 img{
-    width: 20%;
-    height: 10vh;
+    width: 25%;
+    height: 20vh;
   }
   section{
     margin: 10px;
   }
   #dq{
-   
-       width: 172%;
+       width: 177%;
         height: 37vh;
+        margin-right: 10px;
   }
-
+  #dq:hover{
+  transform:scale(1.01) ;
+  }
   #in{
-    width: 100%;
-    height: 26vh;
+    width: 110%;
+    height: 40vh;
   }
   .mensw{
     border: 2px rebeccapurple solid;
@@ -749,10 +798,8 @@ to{right:25%;}
     margin-top: 50px;
     /* display: block; */
     flex-wrap: wrap;
-
   }
-
-  .i1 img{
+   .i1 img{
     width: 95%;
     height: 30rem;
     gap: 2px;
@@ -772,7 +819,6 @@ to{right:25%;}
                width: 46%;
         height: 43vh;
   }
-
   #womens{
     border: 2px black solid;
     height: 200vh;
@@ -809,10 +855,6 @@ to{right:25%;}
   flex-wrap: wrap;
  }
  .phones1 > p{
-  /* flex-direction: column; */
-  /* margin-top: 200px; */
-  /* font-size: 20px;
-  display: flex; */
   font-size: 0px;
  }
  .mobiles2{
@@ -835,14 +877,12 @@ to{right:25%;}
     justify-content: center;
     align-items: center;
   border: 2px rebeccapurple solid;
-  margin-top: 95rem;
+  margin-top: 70rem;
     display: block;
  }
  .nn1{
    width: 200px;
   height: 10px;
-
-  /* flex-wrap: wrap; */
  }
  .nn1 img{
   width: 350px;
@@ -861,7 +901,6 @@ height: auto;
   flex-wrap: wrap;
   background-color: white;
     border: 2px solid red;
- 
  }
  .gift1 p{
       width: 100%;
@@ -884,14 +923,12 @@ height: auto;
   flex-wrap: wrap;
  }
  .rev{
-  /* width: 155px; */
   height: 140px;
  }
  #footer{
   width: 100%;
   height: 200px;
   margin-top: 550px;
-
  }
 .foot{
   flex-wrap: wrap;
@@ -900,98 +937,7 @@ height: auto;
 .last{
   width: 100%;
   margin-top: 10px;
- 
-}
-
-  /* .top{
-    border: 2px blue solid;
-      margin-top: 10px;
-            height: 20vh;
-            position: fixed;
-            top: 0;
-            width: 25%;
-            z-index: 11;
-            background-color: aquamarine;
-           
-  }
-  .logo img{
-    margin-left: -150px;
-    height: 30px;
-    width: 3px;
-    display: flex;
-    justify-content: left;
-    align-items: start; 
-  }
-
-.search_bar.input{
-  width: 10px;
-  height: 10px;
-  margin: auto;
-} */
-
-
-.top{
-  margin-top: 10px;
-  width: 25%;
-  height: 200px;
-  /* display: flex; */
-}
-.logo{
-  margin-top: 100px;
-}
-.logo img{
-  border: 2px solid rgb(0, 0, 0);
-/* margin-left: 80px; */
-/* margin-top: 100px; */
-height: 40px;
-width: 30px;
-}
-.input input{
-  width: 300px;
-  /* width: auto; */
-  /* margin-left: 100px; */
-  /* border: 2px solid rgba(0, 0, 0, 0.341); */
-  margin-top: 10px;
-  margin-right: 50px;
-  
-}
-.search_bar .select{
-  width: 50px;
-  /* margin-right: -10px; */
-  margin-left: 40px;
-  margin-top: 10px
-
-  
-}
-.cart{
-  width: 50px;
-  height: 30px;
-  margin-top: -30px;
-  position: absolute;
-  /* border: 2px solid red; */
-}
-.cart img{
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  /* margin-bottom: 20px; */
-}
-.names{
-
-  width: 90px;
-  height: 100px;
-  border: 2px solid red;
-}
-.names a{
-  width: 10px;
-  font-size: 8px;
-  margin-left: 2px;
-   /* border: 2px solid blue; */
-}
-.carousel-item{
-  margin-top: 110px;
-}
-}
+} 
   
 
 
