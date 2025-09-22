@@ -69,8 +69,7 @@
         .cart{        
             width: 290px;
             display: flex;
-            justify-content: space-evenly;
-
+            justify-content: space-evenly;  
         }
         .cart img{
             width: 42px;
@@ -118,7 +117,6 @@
           margin-top: -400px;
           position: absolute;
          }
-
          .carousel-item h5{
             /* margin-top: 200px; */
             width: 100%;
@@ -155,11 +153,11 @@
               justify-content: space-evenly;
               align-items: center;
               margin-bottom: 100px;
-              flex-wrap: wrap;
+              /* flex-wrap: wrap; */
          }
          .flowers .box{
             width: 280px;
-            height: 57vh;
+            height: 60vh;
             /* border: 2px red solid; */
             border-radius: 30px;
             /* gap: 30px; */
@@ -174,7 +172,7 @@
             padding: 10px ;
               /* border: 2px blueviolet solid; */
               border-radius: 30px;
-              height: 300px;
+              height: 250px;
          }
          .box:hover{
             transform: scale(1.1);
@@ -200,9 +198,9 @@
               /* align-items: center; */
          }
         .mens{
-            width: 90%;
+            width: 100%;
             height: 700px;
-            /* border: 2px red solid; */
+            border: 2px red solid;
             display: flex;
             flex-wrap: wrap;
         }
@@ -214,6 +212,7 @@
         }
          .mens1{
             padding: 5px;
+            display: flex;
          }
          #dq{
             width: 70vh;
@@ -225,8 +224,8 @@
             transition:0.5s  ;
          }
          #in{
-            width: 61rem;
-            height: 41.5rem;
+            width: 63rem;
+            height: 39rem;
             position: relative;
             z-index: -10;
          }
@@ -237,7 +236,7 @@
          .mens1 button{
             position:absolute;
             /* top:300px; */
-            margin-top: -170px;
+            margin-top: 450px;
             left: 690px;
             /* border: 2px red solid; */
             border-radius: 20px;
@@ -294,14 +293,14 @@
           transform: scale(1.1);
             transition:0.5s  ;
        }
-       @keyframes mee{
+       /* @keyframes mee{
       0% {
         transform: translateX(0);
       }
       100% {
         transform: translateX(-50%);
       }
-    }
+    } */
     #womens h2{
       display: flex;
       justify-content: center;
@@ -314,8 +313,10 @@
         display: flex;
     }
     .wom{
-      width: 800px;
+      width: 100%;
       height: 300px;
+      display: flex;
+      justify-content: center;
     }
     .wom img{
       width: 450px;
@@ -330,7 +331,6 @@
     .wom2 img{
        width: 300px;
       height: 500px;
-      
     }
     #womens h5{
       /* background-color: aqua; */
@@ -349,8 +349,8 @@
       width: 240px;
       left: 570px;
       margin-top: 380px;
-          position: absolute;
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: absolute;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .p button{
       width: 100px;
@@ -366,14 +366,14 @@
       animation-iteration-count: 1;
       animation-direction: alternate-reverse;
     }
-    @keyframes mee2{
+    /* @keyframes mee2{
       0% {
         transform: translatex(0);
       }
       100% {
         transform: translatey(50%);
       }
-    }
+    } */
     .wom2{
       animation-name: mee3;
       animation-duration: 5s;
@@ -464,7 +464,6 @@
       /* overflow: hidden; */
      animation: mob 6s linear infinite;
      gap: 20px;
-    
      }
      .mobiles2:hover{
       transform: translate(1.1);
@@ -531,23 +530,51 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
-
 #gifts{
-  margin-top: 300px;
-}
-#gifts h1{
-  margin-top: 20px;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-top: 200px;
+  width: 100%;
+  height: 250vh;
+border: 2px rgb(111, 0, 255) solid;
 }
 .gift{
-  margin-top: 100px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px rgb(175, 16, 51) solid;
+}
+.gift1{
+  width: 45%;
+  height: 600px;
+   border: 2px rgb(193, 9, 135) solid;
+}
+.gift2 img{
+  height: 600px;
+}
+.gift2{
+  width: 45%;
+  height: 600px;
+   border: 2px rgb(26, 182, 75) solid;
+}
+
+.gift2 img{
+  width: 100%;
+  height: 700px;
+}
+/* }
+#gifts h1{
+  margin-bottom: 200px;
+color: black;
+}
+
+.gift{
+  margin-top: 200px;
   width: 100%;
   height: 80vh;
-  /* border: 2px solid rgb(43, 175, 50); */
+  border: 2px solid rgb(43, 175, 50);
   background-color:rgb(121, 208, 242);
    display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 0;
   position: absolute;
@@ -561,7 +588,8 @@ transform: translatey(-30%);
 .gift1{
     width: 40rem;
    height: 500px;
-    /* border: 2px rgb(134, 16, 16) solid; */
+   margin-top: 100px;
+    border: 2px rgb(134, 16, 16) solid;
   font-family:Georgia, 'Times New Roman', Times, serif;
 font-size: 65px;
 color: rgb(16, 16, 185);
@@ -577,7 +605,7 @@ to{left:25%;}
  @keyframes moveleft{
    from{right:0;}
 to{right:25%;}
-}
+} */
 
 .gift1 p{
   width: 86%;
@@ -678,11 +706,15 @@ to{right:25%;}
   /* left: 100px; */
   right: 140px;
 }
-@media screen and (max-width:426px)
+
+@media screen and (max-width:376px)
 { 
+  body{
+    border: black solid 2px;
+  }
 .top{
   /* margin-top: 10px; */
-  width: 47%;
+        width: 100%;
   height: 125px;
   /* display: flex; */
 }
@@ -696,11 +728,11 @@ to{right:25%;}
 height: 40px;
 width: 45px;
     margin-top: -9px;
-    margin-left: -103px;
+    margin-left: -95px;
     border-radius: 50px;
 }
 .input input{
-  width: 300px;
+     width: 285px;
   /* width: auto; */
   /* margin-left: 100px; */
   /* border: 2px solid rgba(0, 0, 0, 0.341); */
@@ -712,6 +744,9 @@ width: 45px;
   /* margin-right: -10px; */
   margin-left: 40px;
     margin-top: -4px;
+}
+.search img{
+  margin-left: -470px;
 }
 .cart{
          width: 50px;
@@ -726,6 +761,9 @@ width: 45px;
   margin-left: 10px;
   /* margin-bottom: 20px; */
 }
+.navbar > .logo, .cart {
+  gap: 7px;
+}
 .names{
   width: 90px;
   height: 100px;
@@ -739,7 +777,16 @@ width: 45px;
 }
 .carousel-item{
   margin-top: 26px;
+  width: 100%;
+  border: 2px solid rgb(183, 88, 16);
 }
+#banner2{
+  width: 100%;
+  height: 155px;
+}
+#banner3{
+  width: 100%;
+  height: 155px;
 }
   .hero{
     margin-top: 100px;
@@ -756,39 +803,52 @@ width: 45px;
   }
   .flowers{
     width: 100%;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     height: auto;
-    margin-top: 1650px;
+    margin: auto;
+    margin-top: 1400px;
+    display: flex;
+    flex-direction: column;
   }
   .box{
     margin: 10px;
   }
   #mens{
-    margin-top: 1530px;
+    margin-top: 1500px;
     border: 2px blue solid;
+    width: 100%;
   }
   .mens{
     margin-top: 20px;
     height: auto;
     border: 2px red solid;
+    width: 100%;
+  }
+  /* .mens1{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .mens1 button{
+    margin-left: -500px;
   }
   .mens1 img{
-    width: 25%;
+    width: 100%;
     height: 20vh;
   }
-  section{
-    margin: 10px;
-  }
   #dq{
-       width: 177%;
-        height: 37vh;
+        border: 2px red solid;
+        /* margin: auto; */
+       width: 100%;
+        height: 80vh;
         margin-right: 10px;
   }
   #dq:hover{
   transform:scale(1.01) ;
   }
   #in{
-    width: 110%;
+    width: 100%;
+    /* margin: auto; */
     height: 40vh;
   }
   .mensw{
@@ -798,30 +858,44 @@ width: 45px;
     margin-top: 50px;
     /* display: block; */
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  /* .i1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
    .i1 img{
     width: 95%;
     height: 30rem;
     gap: 2px;
     column-gap: 0;
   }
+   #womens{
+    border: 2px black solid;
+    height: 155vh;
+    width: 100%;
+  }
+  .wom{
+    width: 100%;
+  }
   .women{
     border: 2px red solid;
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 100%;
   }
   .wom2{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .wom img{
-               width: 46%;
+               width:200px;
         height: 43vh;
-  }
-  #womens{
-    border: 2px black solid;
-    height: 200vh;
   }
   #womens h5,h4{
     display: none;
@@ -829,7 +903,7 @@ width: 45px;
   .wphotos{
     border: 2px red solid;
     margin-top: 100px;
-    height: 110vh;
+    height: 339vh;
      display: block;
   }
   .wphotos .p{
@@ -842,7 +916,7 @@ width: 45px;
     height: 200px;
   }
  #electronics{
-  margin-top: 115rem;
+  margin-top: 2200px;
  }
  .mobiles{
   flex-wrap: wrap;
@@ -854,23 +928,29 @@ width: 45px;
   height: auto;
   flex-wrap: wrap;
  }
+ .phones1 button{
+  margin-left: -570px;
+  margin-top: 760px;
+ }
  .phones1 > p{
-  font-size: 0px;
+  font-size: 30px;
+  margin-left: -300px;
+  margin-top: 650px;
  }
  .mobiles2{
   display: block;
  }
  .phones3{
-  width: 400px;
+  width: 100%;
   height: 400px;
  }
  .phones3 img{
-  width: 390px;
+  width: 80%;
   height: 290px;
   display: block;
  }
  .newmobiles{
-  width: 100%;
+  width: 90%;
   height: auto;
     margin: auto;
     display: flex;
@@ -881,23 +961,24 @@ width: 45px;
     display: block;
  }
  .nn1{
-   width: 200px;
+   width: 100%;
   height: 10px;
  }
  .nn1 img{
-  width: 350px;
+  width: 100%;
   height: 330px;
  }
  .gift{
 display: block;
-width: 100%;
+width: 95%;
 height: auto;
  }
  .gift1{
   width: 100%;
   height: 100px;
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: white;
     border: 2px solid red;
@@ -909,14 +990,18 @@ height: auto;
   width: 100%;
   height: 300px;
   background-color: white;
+  border: 2px greenyellow solid;
  }
  .gift2 img{
-  width: 370px;
+  width: 100%;
   height: auto;
   background-color: white;
  }
  .gift4{
   height: 310px;
+ }
+ .all{
+      margin-top: 344px;
  }
  .review{
   margin-top: 135rem;
@@ -926,7 +1011,7 @@ height: auto;
   height: 140px;
  }
  #footer{
-  width: 100%;
+  width: 95%;
   height: 200px;
   margin-top: 550px;
  }
@@ -938,7 +1023,4 @@ height: auto;
   width: 100%;
   margin-top: 10px;
 } 
-  
-
-
-        
+}
