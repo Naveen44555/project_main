@@ -694,14 +694,12 @@ to{right:25%;}
 }
 .last input {
   position: relative;
-  /* width: 100px; */
   height: 50px;
   background-color: yellow;
 }
 .last1{
   position: absolute;
   margin-top: -40px;
-  /* left: 100px; */
   right: 140px;
 }
 
