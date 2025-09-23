@@ -4,7 +4,7 @@
     }
     .top{
             border: 2px blue solid;
-            height: 9vh;
+            height: 8vh;
             position: fixed;
             top: 0;
             width: 100%;
@@ -61,7 +61,7 @@
         }
          .search img{
             width: 31px;
-            left: 790px;
+            left: 750px;
             top: 14px;
             cursor: pointer;
             position: absolute;          
@@ -72,7 +72,7 @@
             justify-content: space-evenly;  
         }
         .cart img{
-            width: 42px;
+            width: 30px;
             cursor: pointer; 
             margin-top: -15px;        
         }
@@ -491,7 +491,7 @@
       width: 360px;
        /* border: 2px blueviolet solid; */
      }
-     .mobiles2 .phones3{
+     /* .mobiles2 .phones3{
      @keyframes mob{ 
      0% {
         transform: translateX(0);
@@ -500,7 +500,7 @@
         transform: translateX(-50%);
       }
      }   
-    }
+    } */
    #newmobiles h2{
       text-align: center;
    }
@@ -534,7 +534,7 @@
 #gifts{
   margin-top: 40px;
   width: 100%;
-  height: 250vh;
+  height: 220vh;
 border: 2px rgb(111, 0, 255) solid;
 }
 #gifts h1{
@@ -542,39 +542,48 @@ border: 2px rgb(111, 0, 255) solid;
 }
 .gift{
   width: 100%;
-  height: 700px;
-  display: flex;
-  /* justify-content: space-around; */
-  /* border: 2px rgb(175, 16, 51) solid; */
+  height: 530px;
+  /* border-radius: 10px; */
+   position: relative;
+  border: 2px rgb(175, 16, 51) solid;
+}
+.gift1,.gift2{
+  width: 740px;
+  height: 10vh;
+  position: absolute;
+
 }
 .gift1{
-  width: 50%;
-  height: 600px;
-   /* border: 2px rgb(193, 9, 135) solid; */
-   animation: moveleft 2s forwards;
+ left: 0;
+   animation: move-right 4s forwards;
 }
-
 .gift2{
-  width: 50%;
-  height: 600px;
-  animation: moveright 2s forwards;
-   /* border: 2px rgb(26, 182, 75) solid; */
+right: 0;
+  animation: move-left 4s forwards;
 }
-@keyframes moveleft{
+@keyframes move-right{
   from {
-    right:0
+    left:0;
   }
   to{
-    right :25%
+    left:5%
+  }
+}
+@keyframes move-left{
+  from {
+    right:0;
+  }
+  to{
+    right :5%;
   }
 }
 .gift1 img{
   width: 100%;
-  height: 650px;
+  height: 500px;
 }
 .gift2 img{
   width: 100%;
-  height: 650px;
+  height: 500px;
 }
 .gift1 p{
   width: 100%;
@@ -722,28 +731,37 @@ to{right:25%;}
   margin-top: -40px;
   right: 140px;
 }
-@media screen and (max-width:375px)
+
+
+
+
+
+@media screen and (min-width:320px)and (max-width:376px)
 { 
   body{
     border: black solid 2px;
   }
 .top{
   /* margin-top: 10px; */
-        width: 100%;
-  height: 125px;
+   width: 100%;
+  height: 135px;
+  /* border: 2px red solid; */
   /* display: flex; */
 }
+.navbar{
+  width: 100%;
+  height: 120px;
+  /* border: 2px solid rgb(154, 6, 6); */
+}
 .logo{
-  margin-top: 100px;
+  margin-top: 10px;
 }
 .logo img{
   border: 2px solid rgb(0, 0, 0);
-/* margin-left: 80px; */
-/* margin-top: 100px; */
 height: 40px;
-width: 45px;
+width: 40px;
     margin-top: -9px;
-    margin-left: -95px;
+    margin-left: -106px;
     border-radius: 50px;
 }
 .input input{
@@ -822,7 +840,6 @@ width: 45px;
     height: auto;
     margin: auto;
     margin-top: 1400px;
-  
   }
   .box{
     margin: 10px;
@@ -911,7 +928,7 @@ width: 45px;
     width: 100%;
   }
   .wom img{
-               width:200px;
+         width:200px;
         height: 43vh;
   }
   #womens h5,h4{
@@ -1003,11 +1020,11 @@ height: auto;
  .gift1 p{
       width: 100%;
  }
+ .gift1 img{
+  height: 325px;
+ }
  .gift2{
-  width: 100%;
-  height: 300px;
-  background-color: white;
-  border: 2px greenyellow solid;
+display: none;
  }
  .gift2 img{
   width: 100%;

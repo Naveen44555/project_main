@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animation</title>
+  <style>
+    body {
+      height: 200vh; /* just for scrolling demo */
+      margin: 0;
+    }
+
+    .box {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      margin-top: 500px; /* so you need to scroll down */
+      background: #f0f0f0;
+    }
+
+    .box1, .box2 {
+      width: 200px;
+      height: 20vh;
+      border-radius: 10px;
+      position: absolute;
+      top: 100%;
+    }
+
+    .box1 {
+      background-color: rgb(95, 19, 166); /* purple */
+      left: 0;
+      animation: moveright 7s forwards;
+      animation-play-state: paused; /* paused until scroll */
+    }
+
+    .box2 {
+      background-color: chartreuse; /* yellow-green */
+      right: 0;
+      animation: moveleft 7s forwards;
+      animation-play-state: paused; /* paused until scroll */
+    }
+
+    @keyframes moveright {
+      from { left: 0; }
+      to { left: 35%; }
+    }
+
+    @keyframes moveleft {
+      from { right: 0; }
+      to { right: 35%; }
+    }
+
+    /* When active -> animation runs */
+    .active .box1,
+    .active .box2 {
+      animation-play-state: running;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+
+  <script>
+    const box = document.querySelector(".box");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active"); // start animations
+        }
+      });
+    });
+
+    observer.observe(box); // ✅ observe the parent container
+  </script>
+
+</body>
+</html>

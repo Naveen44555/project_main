@@ -1,0 +1,170 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: aquamarine;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo p {
+    margin-left: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.cart img {
+    width: 35px;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    margin-top: 100px; /* push content below navbar */
+}
+
+/* Gifts Section */
+#gifts {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    border: 2px solid rgb(111, 0, 255);
+    overflow: hidden;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#gifts h1 {
+    margin-bottom: 50px;
+}
+
+/* Moving Gifts */
+.gift {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.gift1, .gift2 {
+    position: absolute;
+    top: 0;
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gift1 {
+    left: -350px;
+    animation: moveRight 4s linear infinite alternate;
+}
+
+.gift2 {
+    right: -350px;
+    animation: moveLeft 4s linear infinite alternate;
+}
+
+.gift1 img, .gift2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gift1 p, .gift2 p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 24px;
+    color: darkred;
+}
+
+/* Animation */
+@keyframes moveRight {
+    from { left: -350px; }
+    to { left: 50px; }
+}
+
+@keyframes moveLeft {
+    from { right: -350px; }
+    to { right: 50px; }
+}
+
+/* All Gifts Grid */
+.all {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.gift4 {
+    width: 320px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid chartreuse;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px chartreuse;
+    transition: 0.5s;
+}
+
+.gift4:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px red;
+    border: 2px solid red;
+}
+
+.gift4 img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.gift4 button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

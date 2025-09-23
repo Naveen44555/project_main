@@ -13,7 +13,7 @@
         <div class="top">
             <div class="navbar">
                 <div class="logo">
-                    <img src="./logo.png" alt="">
+                    <img src="./e-icon.png" alt="">
                     <p>Easier</p>
                 </div>
                 <div class="search_bar">
@@ -341,30 +341,23 @@
                <button>Add to cart</button>
             </div>
         </div>
-
   </section>
-    <!-- <section id="gifts">
-      <h1>gifts</h1>
-      <div class="gift">
-         <div class="gift1" id="g1">
-          <p>Celebrate every moment with gifts of fashion, beauty, time, love, and flowers.</p>
-        </div>
-        <div class="gift2">
-          <img src="./gift1.jpg" alt="">
-        </div>
-      </div>       -->
+
+      
       <section id="gifts">
         <h1>gifts</h1>
           <div class="gift">
             <div class="gift1" id="g1">
-              <img src="./gift44.jpg" alt="">
+              <img src="./gift22.jpg" alt="">
+              
            <!-- <p>Celebrate every moment with gifts of fashion, beauty, time, love, and flowers.</p> -->
             </div>
             <div class="gift2">
-              <img src="./gift1.jpg" alt="">
+              <img src="./gift-b1.jpg" alt="">
             </div>
           </div>
-      
+          
+          
       <!-- <div class="nnmobiles"> -->
       <div class="all">
          <div class="gift4">
@@ -381,7 +374,7 @@
           <button>Add to cart</button>
       </div>
       <div class="gift4">
-        <img src="./gift2.jpg" alt="">
+        <img src="./gift-b2.jpg" alt="">
          <h2>Chocy gift</h2>
           <h3>price - &#8377 144</h3>
           <button>Add to cart</button>
@@ -393,7 +386,7 @@
           <button>Add to cart</button>
       </div>
       <div class="gift4">
-          <img src="./gift3.jpg" alt="">
+          <img src="./gift12.jpg" alt="">
            <h2>Chocy gift</h2>
           <h3>price - &#8377 144</h3>
           <button>Add to cart</button>
@@ -411,7 +404,7 @@
           <button>Add to cart</button>
       </div>
         <div class="gift4">
-          <img src="./f6.jpeg" alt="">
+          <img src="./f6.jpg" alt="">
            <h2>Chocy gift</h2>
           <h3>price - &#8377 144</h3>
           <button>Add to cart</button>
@@ -490,11 +483,22 @@
       </div>
     </section>
 
-    
-
 </main>
-
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+   <script>
+    const gift= document.querySelector(".gift");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active"); // start animations
+        }
+      });
+    });
+    observer.observe(gift); // ✅ observe the parent container
+  </script>
+
 </body>
 </html>

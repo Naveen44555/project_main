@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ---------------- Navbar ---------------- */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    /* ---------------- Sections ---------------- */
+    section {
+      min-height: 100vh;
+      padding: 80px 20px 20px; /* leave space for navbar */
+      text-align: center;
+    }
+
+    #womens { background: #ffe4e1; }
+    #mens { background: #e6e6fa; }
+    #gift { background: #fff0f5; }
+    #electronics { background: #f0ffff; }
+    #boquet { background: #f5fffa; }
+    #footersection { background: #333; color: white; }
+
+    /* ---------------- Animations ---------------- */
+    @keyframes mee1 {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes mee2 {
+      from { transform: translateX(50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes mensMove {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes giftMove {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes electronicsMove {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes boquetMove {
+      from { transform: rotate(-10deg); opacity: 0; }
+      to { transform: rotate(0); opacity: 1; }
+    }
+
+    /* ---------------- Default State ---------------- */
+    .wom, .wom2, .mens, .gift, .electronics, .boquet {
+      opacity: 0;
+    }
+
+    /* ---------------- Active State ---------------- */
+    .wom.active {
+      animation: mee1 1.5s ease forwards;
+    }
+
+    .wom2.active {
+      animation: mee2 1.5s ease forwards;
+    }
+
+    .mens.active {
+      animation: mensMove 1.5s ease forwards;
+    }
+
+    .gift.active {
+      animation: giftMove 1.5s ease forwards;
+    }
+
+    .electronics.active {
+      animation: electronicsMove 1.5s ease forwards;
+    }
+
+    .boquet.active {
+      animation: boquetMove 1.5s ease forwards;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">🛍️ My Shopping Website</div>
+
+  <!-- Womens Section -->
+  <section id="womens">
+    <h1 class="wom">Women's Collection</h1>
+    <p class="wom2">Trendy outfits just for you.</p>
+  </section>
+
+  <!-- Mens Section -->
+  <section id="mens">
+    <h1 class="mens">Men's Collection</h1>
+    <p class="mens">Stylish fashion for men.</p>
+  </section>
+
+  <!-- Gift Section -->
+  <section id="gift">
+    <h1 class="gift">🎁 Gift Section</h1>
+    <p class="gift">Find the perfect gift for your loved ones.</p>
+  </section>
+
+  <!-- Electronics Section -->
+  <section id="electronics">
+    <h1 class="electronics">Electronics</h1>
+    <p class="electronics">Latest gadgets and devices.</p>
+  </section>
+
+  <!-- Boquet Section -->
+  <section id="boquet">
+    <h1 class="boquet">💐 Boquet</h1>
+    <p class="boquet">Fresh flowers to brighten your day.</p>
+  </section>
+
+  <!-- Footer Section -->
+  <section id="footersection">
+    <h2>Footer Section</h2>
+    <p>© 2025 My Shopping Website. All rights reserved.</p>
+  </section>
+
+  <!-- Script for Scroll Animations -->
+  <script>
+    const items = document.querySelectorAll(".wom, .wom2, .mens, .gift, .electronics, .boquet");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    items.forEach(item => observer.observe(item));
+  </script>
+</body>
+</html>
