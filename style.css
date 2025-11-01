@@ -736,14 +736,14 @@ to{right:25%;}
 
 
 
-@media screen and (min-width:320px)and (max-width:376px)
-{ 
+@media screen and (min-width:320px)and (max-width:376px){ 
+
   body{
     border: black solid 2px;
   }
 .top{
   /* margin-top: 10px; */
-   width: 100%;
+   width: 99%;
   height: 145px;
   /* border: 2px red solid; */
   /* display: flex; */
@@ -798,7 +798,7 @@ width: 40px;
   gap: 7px;
 }
 .names{
-  width: ;
+  /* width: ; */
   height: 100px;
   border: 2px solid red;
 }
@@ -1057,4 +1057,20 @@ display: none;
   width: 100%;
   margin-top: 10px;
 } 
+}
+
+@media screen and (max-width:427px) and (min-width:378px) {
+  body{
+    border: 3px red solid;
+  }
+  .top{
+    width: 27%;
+  }
+  .input{
+    width: 100%;
+  }
+  .search_bar{
+    width: 100%;
+  }
+  
 }

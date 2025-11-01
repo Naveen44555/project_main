@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            border: 2px red solid;
+        }
+        .con{
+            border: 2px blue solid;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .b1{
+            border: 2px red solid;
+            width: 30%;
+            height: 40vh;
+            margin: 5px;
+        }
+        @media screen and (max-width: 321px)
+            {
+                .con{
+                width: 100%;
+                }
+                .b1{
+                    width: 90%;
+   
+                }
+        }
+        @media screen and (min-width:325px)and (max-width: 427px)
+        {      
+            .con{
+                width: 100%;
+               
+            }
+            .b1{
+                width: 100%; 
+                border: 2px green solid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+    </div>
+</body>
+</html>
